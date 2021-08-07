@@ -1,13 +1,14 @@
 version: '3'
 services:
-  web:
-    image: apache
-    build: ./webapp
-    container_name: apache
-    restart: always
-    # we can see the server running at "localhost:8080"
-    ports:
-      - "8080:80"
+  #This service would be if you were running an app locally before testing
+  #web:
+  #  image: apache
+  #  build: ./webapp
+  #  container_name: apache
+  #  restart: always
+  #  # we can see the server running at "localhost:8080"
+  #  ports:
+  #    - "8080:80"
 
   e2e:
     image: cypress
