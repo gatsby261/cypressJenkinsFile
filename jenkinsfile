@@ -8,9 +8,9 @@ pipeline {
                 sh 'npm test'
             }
         }
-        stage('Allure reporting') {
+        stage('Test execution reporting') {
             steps {
-                echo 'Reporting goes here...'
+                junit 'results/cypress-report.xml'
             }
         }
     }
