@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps { 
                 echo 'Testing...'
-                npm test
+                sh 'npm test'
             }
         }
         stage('Allure reporting') {
