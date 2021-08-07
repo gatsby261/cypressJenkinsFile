@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps { 
                 echo 'Testing...'
-                npx cypress run
+                npm test
             }
         }
         stage('Allure reporting') {
