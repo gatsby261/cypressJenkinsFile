@@ -14,8 +14,6 @@ services:
     image: cypress
     build: ./cypress
     container_name: cypress
-    depends_on:
-      - web
     # note: inside e2e container, the network allows accessing
     # "web" host under name "web"
     # so "curl http://web" would return whatever the webserver
